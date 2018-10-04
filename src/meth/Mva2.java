@@ -403,7 +403,7 @@ public class Mva2 extends LimitedFiringSource {
 					e.printStackTrace();
 				}
 			} else
-				JOptionPane.showMessageDialog(null, "extension du fichier doit être soit .xml , .jmva ou .tgf ");
+				JOptionPane.showMessageDialog(null, "extension du fichier doit etre soit .xml , .jmva ou .tgf ");
 			
 			NumberFormat fmat = NumberFormat.getNumberInstance();
 			fmat.setMaximumFractionDigits(3);
@@ -741,14 +741,14 @@ public class Mva2 extends LimitedFiringSource {
 
 		if (n instanceof Element) {
 
-			// Nous sommes donc bien sur un élément de notre document
+			// Nous sommes donc bien sur un element de notre document
 			// Nous castons l'objet de type Node en type Element
 			Element element = (Element) n;
 
-			// nous contrôlons la liste des attributs présents
+			// nous contrÃ´lons la liste des attributs presents
 			if (n.getAttributes() != null && n.getAttributes().getLength() > 0) {
 
-				// nous pouvons récupérer la liste des attributs dans une Map
+				// nous pouvons recuperer la liste des attributs dans une Map
 				NamedNodeMap att = n.getAttributes();
 				int nbAtt = att.getLength();
 				Node n0 = att.item(0);
@@ -783,7 +783,7 @@ public class Mva2 extends LimitedFiringSource {
 			// Nous allons maintenant traiter les noeuds enfants du noeud en cours de
 			// traitement
 			int nbChild = n.getChildNodes().getLength();
-			// Nous récupérons la liste des noeuds enfants
+			// Nous recuperons la liste des noeuds enfants
 			NodeList list = n.getChildNodes();
 
 			// nous parcourons la liste des noeuds
@@ -803,7 +803,7 @@ public class Mva2 extends LimitedFiringSource {
 						v.add(D[0]);
 
 					}
-					// appel récursif à la méthode pour le traitement du noeud et de ses enfants
+					// appel recursif a la methode pour le traitement du noeud et de ses enfants
 					createJTree(number, type, v1, v, n2, noeud);
 					treeNode.add(noeud);
 
