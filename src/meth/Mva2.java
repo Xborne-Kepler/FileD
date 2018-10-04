@@ -403,7 +403,7 @@ public class Mva2 extends LimitedFiringSource {
 					e.printStackTrace();
 				}
 			} else
-				JOptionPane.showMessageDialog(null, "extension du fichier doit être soit .xml , .jmva ou .tgf ");
+				JOptionPane.showMessageDialog(null, "extension du fichier doit etre soit .xml , .jmva ou .tgf ");
 			
 			NumberFormat fmat = NumberFormat.getNumberInstance();
 			fmat.setMaximumFractionDigits(3);
@@ -745,7 +745,11 @@ public class Mva2 extends LimitedFiringSource {
 			// Nous castons l'objet de type Node en type Element
 			Element element = (Element) n;
 
+<<<<<<< HEAD
 			// nous contrôlons la liste des attributs presents
+=======
+			// nous contrÃ´lons la liste des attributs presents
+>>>>>>> 235a5d4cdd7f2f67cabf0b6b1c33a6c069379952
 			if (n.getAttributes() != null && n.getAttributes().getLength() > 0) {
 
 				// nous pouvons recuperer la liste des attributs dans une Map
