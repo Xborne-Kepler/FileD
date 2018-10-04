@@ -108,14 +108,14 @@ public class MM1 extends LimitedFiringSource {
 	}
 	
 	int combinaison(int n,int p) {
-	    int[] t = new int[n+1]; //Tableau de n éléments
+	    int[] t = new int[n+1]; //Tableau de n elements
 	    t[0] = 1;
 	    for (int i = 1; i <= n; i++) {
 	        t[i] = 1;
-	        for (int j = i - 1; j >= 1; j--) //On part de le fin pour ne pas écraser les valeurs.
-	            t[j] = t[j] + t[j - 1]; //On fait les calculs nécessaires.
+	        for (int j = i - 1; j >= 1; j--) //On part de le fin pour ne pas ecraser les valeurs.
+	            t[j] = t[j] + t[j - 1]; //On fait les calculs necessaires.
 	    }
-	    return t[p]; //On renvoie la valeur recherchée.
+	    return t[p]; //On renvoie la valeur recherchee.
 	}
 
 	@Override
