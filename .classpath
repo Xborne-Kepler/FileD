@@ -3,14 +3,11 @@
   <classpathentry excluding="**/.svn/|**/CVS/" kind="src" path="src"/>
   <classpathentry excluding="**/.svn/|**/CVS/|images/" kind="src" path="lib">
     <attributes>
-      <attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Jni-Gth/lib"/>
+      <attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="FileD/lib"/>
     </attributes>
   </classpathentry>
   <classpathentry excluding="**/.svn/|**/CVS/|**/*.java" kind="src" path="resources"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry combineaccessrules="false" kind="src" path="/kepler"/>
-  <classpathentry combineaccessrules="false" kind="src" path="/outreach"/>
-  <classpathentry combineaccessrules="false" kind="src" path="/r"/>
   <classpathentry combineaccessrules="false" kind="src" path="/loader"/>
   <classpathentry combineaccessrules="false" kind="src" path="/display-redirect"/>
   <classpathentry combineaccessrules="false" kind="src" path="/actors"/>

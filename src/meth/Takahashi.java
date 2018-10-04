@@ -269,7 +269,7 @@ public class Takahashi extends LimitedFiringSource {
 
 	public static double[][][] Reduction(double[][][] B, int[] TailleB) {
 		double[][][] Bnew = new double[TailleB.length][][];
-		// 2 eme partie : la réduction
+		// 2 eme partie : la reduction
 		for (int c = 0; c < TailleB.length; c++) {
 				int L = B[c].length - 1;
 				
@@ -292,38 +292,7 @@ public class Takahashi extends LimitedFiringSource {
 					}
 				}
 		}
-		
-		/*// 2 eme partie : la réduction
-
-		double[][][] Bnew = new double[TailleB.length][][];
-		for (int c = 0; c < TailleB.length; c++) {
-			int L = B[c].length - 1;
-			int n = TailleB[c];
-			while (L >= n) {
-				double[][][] t = ValeurInter(B, TailleB);
-				for (int i = 0; i <= L - 1; i++) {
-					for (int j = 0; j <= L - 1; j++) {
-						B[c][i][j] = B[c][i][j] + t[c][i][j];
-					}
-				}
-				L--;
-			}
-
-			Bnew[c] = new double[n][n];
-			for (int i = 0; i < n; i++) {
-				for (int j = 0; j < n; j++) {
-					Bnew[c][i][j] = B[c][i][j];
-				}
-			}
-
-		}
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < 3; j++) {
-				System.out.print(B[0][i][j] + " | ");
-			}
-			System.out.println();
-		}*/
-		return Bnew;
+			return Bnew;
 
 	}
 	
