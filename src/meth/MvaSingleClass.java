@@ -30,7 +30,7 @@ import ptolemy.kernel.util.NameDuplicationException;
 import ptolemy.kernel.util.Workspace;
 import ptolemy.data.IntToken;
 
-public class Mva extends LimitedFiringSource {
+public class MvaSingleClass extends LimitedFiringSource {
 	public Parameter outt;
 	public Parameter attrib;
 	public TypedIOPort input;
@@ -38,7 +38,7 @@ public class Mva extends LimitedFiringSource {
 	public TypedIOPort outK;
 	public PortParameter arrayLength;
 
-	public Mva(CompositeEntity container, String name) throws NameDuplicationException, IllegalActionException {
+	public MvaSingleClass(CompositeEntity container, String name) throws NameDuplicationException, IllegalActionException {
 		super(container, name);
 		_firingCountLimit = 1;
 
@@ -74,7 +74,7 @@ public class Mva extends LimitedFiringSource {
 	}
 
 	public Object clone(Workspace workspace) throws CloneNotSupportedException {
-		Mva newObject = (Mva) super.clone(workspace);
+		MvaSingleClass newObject = (MvaSingleClass) super.clone(workspace);
 		try {
 			newObject.output.setTypeAtLeast(ActorTypeUtil.arrayOf(newObject.input, newObject.arrayLength));
 			newObject.input.setTypeAtLeast(new ArrayElementTypeFunction(newObject.output));

@@ -48,7 +48,7 @@ import ptolemy.kernel.util.Workspace;
 import ptolemy.data.IntToken;
 import java.util.Vector;
 
-public class Mva2 extends LimitedFiringSource {
+public class MvaMultiClass extends LimitedFiringSource {
 	public Parameter combinaison;
 	public Parameter outt;
 	public Parameter attrib;
@@ -58,7 +58,7 @@ public class Mva2 extends LimitedFiringSource {
 	public TypedIOPort outK;
 	public PortParameter arrayLength;
 
-	public Mva2(CompositeEntity container, String name) throws NameDuplicationException, IllegalActionException {
+	public MvaMultiClass(CompositeEntity container, String name) throws NameDuplicationException, IllegalActionException {
 		super(container, name);
 		_firingCountLimit = 1;
 
@@ -745,11 +745,6 @@ public class Mva2 extends LimitedFiringSource {
 			// Nous castons l'objet de type Node en type Element
 			Element element = (Element) n;
 
-<<<<<<< HEAD
-			// nous contrôlons la liste des attributs presents
-=======
-			// nous contrÃ´lons la liste des attributs presents
->>>>>>> 235a5d4cdd7f2f67cabf0b6b1c33a6c069379952
 			if (n.getAttributes() != null && n.getAttributes().getLength() > 0) {
 
 				// nous pouvons recuperer la liste des attributs dans une Map
